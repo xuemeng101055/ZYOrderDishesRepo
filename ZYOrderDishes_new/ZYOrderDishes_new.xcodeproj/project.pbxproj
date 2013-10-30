@@ -268,6 +268,15 @@
 		4A4C32C21820FBE800A8DECC /* ZYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32C01820FBE800A8DECC /* ZYMainViewController.m */; };
 		4A4C32C31820FBE800A8DECC /* ZYMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32C11820FBE800A8DECC /* ZYMainViewController.xib */; };
 		4A4C32C51820FCC900A8DECC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4C32C41820FCC900A8DECC /* libsqlite3.0.dylib */; };
+		4A4C32C8182102DB00A8DECC /* ZYDishKindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32C7182102DB00A8DECC /* ZYDishKindCell.m */; };
+		4A4C32CD1821045300A8DECC /* ZYDishSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32CB1821045300A8DECC /* ZYDishSuperViewController.m */; };
+		4A4C32CE1821045300A8DECC /* ZYDishSuperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32CC1821045300A8DECC /* ZYDishSuperViewController.xib */; };
+		4A4C32D41821052F00A8DECC /* ZYReconmmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32D21821052F00A8DECC /* ZYReconmmentViewController.m */; };
+		4A4C32D51821052F00A8DECC /* ZYReconmmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32D31821052F00A8DECC /* ZYReconmmentViewController.xib */; };
+		4A4C32D91821054800A8DECC /* ZYNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32D71821054800A8DECC /* ZYNormalViewController.m */; };
+		4A4C32DA1821054800A8DECC /* ZYNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */; };
+		4A4C32DE182105DD00A8DECC /* ZYDatabaseUitl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */; };
+		4A4C32E11821069200A8DECC /* ZYDatabaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32E01821069200A8DECC /* ZYDatabaseDao.m */; };
 		5898E4F8181E6FE8004AC185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898E4F7181E6FE8004AC185 /* UIKit.framework */; };
 		5898E4FA181E6FE8004AC185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898E4F9181E6FE8004AC185 /* Foundation.framework */; };
 		5898E4FC181E6FE8004AC185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898E4FB181E6FE8004AC185 /* CoreGraphics.framework */; };
@@ -547,6 +556,21 @@
 		4A4C32C01820FBE800A8DECC /* ZYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMainViewController.m; sourceTree = "<group>"; };
 		4A4C32C11820FBE800A8DECC /* ZYMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMainViewController.xib; sourceTree = "<group>"; };
 		4A4C32C41820FCC900A8DECC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		4A4C32C6182102DB00A8DECC /* ZYDishKindCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDishKindCell.h; sourceTree = "<group>"; };
+		4A4C32C7182102DB00A8DECC /* ZYDishKindCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishKindCell.m; sourceTree = "<group>"; };
+		4A4C32CA1821045300A8DECC /* ZYDishSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDishSuperViewController.h; sourceTree = "<group>"; };
+		4A4C32CB1821045300A8DECC /* ZYDishSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishSuperViewController.m; sourceTree = "<group>"; };
+		4A4C32CC1821045300A8DECC /* ZYDishSuperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYDishSuperViewController.xib; sourceTree = "<group>"; };
+		4A4C32D11821052F00A8DECC /* ZYReconmmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYReconmmentViewController.h; sourceTree = "<group>"; };
+		4A4C32D21821052F00A8DECC /* ZYReconmmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYReconmmentViewController.m; sourceTree = "<group>"; };
+		4A4C32D31821052F00A8DECC /* ZYReconmmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYReconmmentViewController.xib; sourceTree = "<group>"; };
+		4A4C32D61821054800A8DECC /* ZYNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNormalViewController.h; sourceTree = "<group>"; };
+		4A4C32D71821054800A8DECC /* ZYNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNormalViewController.m; sourceTree = "<group>"; };
+		4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYNormalViewController.xib; sourceTree = "<group>"; };
+		4A4C32DC182105DD00A8DECC /* ZYDatabaseUitl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDatabaseUitl.h; sourceTree = "<group>"; };
+		4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDatabaseUitl.m; sourceTree = "<group>"; };
+		4A4C32DF1821069200A8DECC /* ZYDatabaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDatabaseDao.h; sourceTree = "<group>"; };
+		4A4C32E01821069200A8DECC /* ZYDatabaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDatabaseDao.m; sourceTree = "<group>"; };
 		5898E4F4181E6FE8004AC185 /* ZYOrderDishes_new.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYOrderDishes_new.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5898E4F7181E6FE8004AC185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5898E4F9181E6FE8004AC185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -935,8 +959,51 @@
 				4A4C32BF1820FBE800A8DECC /* ZYMainViewController.h */,
 				4A4C32C01820FBE800A8DECC /* ZYMainViewController.m */,
 				4A4C32C11820FBE800A8DECC /* ZYMainViewController.xib */,
+				4A4C32C6182102DB00A8DECC /* ZYDishKindCell.h */,
+				4A4C32C7182102DB00A8DECC /* ZYDishKindCell.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		4A4C32C91821042500A8DECC /* SuperDish */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C32CA1821045300A8DECC /* ZYDishSuperViewController.h */,
+				4A4C32CB1821045300A8DECC /* ZYDishSuperViewController.m */,
+				4A4C32CC1821045300A8DECC /* ZYDishSuperViewController.xib */,
+			);
+			path = SuperDish;
+			sourceTree = "<group>";
+		};
+		4A4C32CF182104FA00A8DECC /* Reconmment */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C32D11821052F00A8DECC /* ZYReconmmentViewController.h */,
+				4A4C32D21821052F00A8DECC /* ZYReconmmentViewController.m */,
+				4A4C32D31821052F00A8DECC /* ZYReconmmentViewController.xib */,
+			);
+			path = Reconmment;
+			sourceTree = "<group>";
+		};
+		4A4C32D01821050000A8DECC /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C32D61821054800A8DECC /* ZYNormalViewController.h */,
+				4A4C32D71821054800A8DECC /* ZYNormalViewController.m */,
+				4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */,
+			);
+			path = Normal;
+			sourceTree = "<group>";
+		};
+		4A4C32DB182105AA00A8DECC /* DatabaseOpreation */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C32DC182105DD00A8DECC /* ZYDatabaseUitl.h */,
+				4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */,
+				4A4C32DF1821069200A8DECC /* ZYDatabaseDao.h */,
+				4A4C32E01821069200A8DECC /* ZYDatabaseDao.m */,
+			);
+			path = DatabaseOpreation;
 			sourceTree = "<group>";
 		};
 		5898E4EB181E6FE8004AC185 = {
@@ -972,6 +1039,10 @@
 		5898E4FD181E6FE8004AC185 /* ZYOrderDishes_new */ = {
 			isa = PBXGroup;
 			children = (
+				4A4C32DB182105AA00A8DECC /* DatabaseOpreation */,
+				4A4C32D01821050000A8DECC /* Normal */,
+				4A4C32CF182104FA00A8DECC /* Reconmment */,
+				4A4C32C91821042500A8DECC /* SuperDish */,
 				4A4C32BE1820FBB900A8DECC /* Main */,
 				5898E506181E6FE8004AC185 /* ZYAppDelegate.h */,
 				5898E507181E6FE8004AC185 /* ZYAppDelegate.m */,
@@ -1310,6 +1381,9 @@
 				4A4C32BC1820F16D00A8DECC /* 花雕.jpg in Resources */,
 				4A4C32BD1820F16D00A8DECC /* 茅台.jpg in Resources */,
 				4A4C32C31820FBE800A8DECC /* ZYMainViewController.xib in Resources */,
+				4A4C32CE1821045300A8DECC /* ZYDishSuperViewController.xib in Resources */,
+				4A4C32D51821052F00A8DECC /* ZYReconmmentViewController.xib in Resources */,
+				4A4C32DA1821054800A8DECC /* ZYNormalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1327,6 +1401,12 @@
 				4A4C30B81820F14B00A8DECC /* FMDatabaseAdditions.m in Sources */,
 				4A4C30B91820F14B00A8DECC /* FMResultSet.m in Sources */,
 				4A4C32C21820FBE800A8DECC /* ZYMainViewController.m in Sources */,
+				4A4C32C8182102DB00A8DECC /* ZYDishKindCell.m in Sources */,
+				4A4C32CD1821045300A8DECC /* ZYDishSuperViewController.m in Sources */,
+				4A4C32D41821052F00A8DECC /* ZYReconmmentViewController.m in Sources */,
+				4A4C32D91821054800A8DECC /* ZYNormalViewController.m in Sources */,
+				4A4C32DE182105DD00A8DECC /* ZYDatabaseUitl.m in Sources */,
+				4A4C32E11821069200A8DECC /* ZYDatabaseDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,11 @@
 @interface ZYMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
     IBOutlet UITableView *_dishKindTableView;
+    int                   _currentSelectRow;
+    UIViewController        *_currentViewController;
 }
+
+@property (nonatomic,retain) NSArray              *menuImageArray;
+@property (nonatomic,retain) NSArray              *menuHighlightedImageArray;
 
 @end

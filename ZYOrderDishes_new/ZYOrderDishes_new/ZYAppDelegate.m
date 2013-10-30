@@ -7,7 +7,7 @@
 //
 
 #import "ZYAppDelegate.h"
-
+#import "ZYDatabaseUitl.h"
 #import "ZYViewController.h"
 
 @implementation ZYAppDelegate
@@ -23,11 +23,39 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    [self moveDataBase];
     self.viewController = [[[ZYViewController alloc] initWithNibName:@"ZYViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
+- (void)moveDataBase
+{
+    //找到工程文件路径
+    
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"database" ofType:@"sqlite"];
+    
+    NSString *toPath = [ZYDatabaseUitl getDataBasePath];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSError *error = nil;
+    
+    if (![fileManager fileExistsAtPath:toPath]) {
+        
+        if (![fileManager copyItemAtPath:file toPath:toPath error:&error]) {
+            NSLog(@"error == %@",error);
+        }else{
+            NSLog(@"success");
+        }
+    }else{
+        NSLog(@"已经存在");
+    }
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
