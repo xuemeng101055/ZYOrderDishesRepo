@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZYSettingViewController.h"
 
 @interface ZYViewController : UIViewController
 {
     UIView *_settingView;
+    ZYSettingViewController *_settingViewController;
+    BOOL _isShowing;
 }
 
 @property (nonatomic, retain)UIView *settingView;

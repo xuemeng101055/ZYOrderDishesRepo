@@ -23,6 +23,7 @@
 - (void)dealloc
 {
     [_settingView release];
+    [_settingViewController release];
     [super dealloc];
 }
 
@@ -30,7 +31,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    _settingView = [[UIView alloc] initWithFrame:CGRectMake(-340, 50, 300, 480)];
+    _settingView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:_settingView];
+    
+    _settingViewController = [[ZYSettingViewController alloc] init];
+    [_settingView addSubview:_settingViewController.view];
+    
+    _settingView.alpha = 0;
     
     
 }
@@ -58,7 +67,26 @@
         [mainViewController release];
         
     }else if (tag == MORESETTING_BUTTON_TAG){
-        
+        if (!_isShowing) {
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:.5];
+            _settingView.frame = CGRectMake(20, 50, 300, 480);
+            _settingView.alpha = 1;
+            [UIView commitAnimations];
+        }else{
+            [UIView beginAnimations:nil context:nil];
+            [UIView setAnimationDuration:.5];
+            _settingView.frame = CGRectMake(-340, 50, 300, 480);
+            _settingView.alpha = 1;
+            
+            if (_settingViewController.showView != nil) {
+                [_settingViewController.showView removeFromSuperview];
+                _settingViewController.isShowing = NO;
+            }
+            
+            [UIView commitAnimations];
+        }
+        _isShowing = !_isShowing;
     }
 }
 
