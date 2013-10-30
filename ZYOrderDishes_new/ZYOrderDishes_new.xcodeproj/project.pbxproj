@@ -265,6 +265,9 @@
 		4A4C32BB1820F16D00A8DECC /* 红星.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C31BE1820F16D00A8DECC /* 红星.jpg */; };
 		4A4C32BC1820F16D00A8DECC /* 花雕.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C31BF1820F16D00A8DECC /* 花雕.jpg */; };
 		4A4C32BD1820F16D00A8DECC /* 茅台.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C31C01820F16D00A8DECC /* 茅台.jpg */; };
+		4A4C32C21820FBE800A8DECC /* ZYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32C01820FBE800A8DECC /* ZYMainViewController.m */; };
+		4A4C32C31820FBE800A8DECC /* ZYMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32C11820FBE800A8DECC /* ZYMainViewController.xib */; };
+		4A4C32C51820FCC900A8DECC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4C32C41820FCC900A8DECC /* libsqlite3.0.dylib */; };
 		5898E4F8181E6FE8004AC185 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898E4F7181E6FE8004AC185 /* UIKit.framework */; };
 		5898E4FA181E6FE8004AC185 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898E4F9181E6FE8004AC185 /* Foundation.framework */; };
 		5898E4FC181E6FE8004AC185 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898E4FB181E6FE8004AC185 /* CoreGraphics.framework */; };
@@ -540,6 +543,10 @@
 		4A4C31BE1820F16D00A8DECC /* 红星.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "红星.jpg"; sourceTree = "<group>"; };
 		4A4C31BF1820F16D00A8DECC /* 花雕.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "花雕.jpg"; sourceTree = "<group>"; };
 		4A4C31C01820F16D00A8DECC /* 茅台.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "茅台.jpg"; sourceTree = "<group>"; };
+		4A4C32BF1820FBE800A8DECC /* ZYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMainViewController.h; sourceTree = "<group>"; };
+		4A4C32C01820FBE800A8DECC /* ZYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMainViewController.m; sourceTree = "<group>"; };
+		4A4C32C11820FBE800A8DECC /* ZYMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMainViewController.xib; sourceTree = "<group>"; };
+		4A4C32C41820FCC900A8DECC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		5898E4F4181E6FE8004AC185 /* ZYOrderDishes_new.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYOrderDishes_new.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5898E4F7181E6FE8004AC185 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5898E4F9181E6FE8004AC185 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -563,6 +570,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4C32C51820FCC900A8DECC /* libsqlite3.0.dylib in Frameworks */,
 				5898E4F8181E6FE8004AC185 /* UIKit.framework in Frameworks */,
 				5898E4FA181E6FE8004AC185 /* Foundation.framework in Frameworks */,
 				5898E4FC181E6FE8004AC185 /* CoreGraphics.framework in Frameworks */,
@@ -921,6 +929,16 @@
 			path = "酒水";
 			sourceTree = "<group>";
 		};
+		4A4C32BE1820FBB900A8DECC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4A4C32BF1820FBE800A8DECC /* ZYMainViewController.h */,
+				4A4C32C01820FBE800A8DECC /* ZYMainViewController.m */,
+				4A4C32C11820FBE800A8DECC /* ZYMainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		5898E4EB181E6FE8004AC185 = {
 			isa = PBXGroup;
 			children = (
@@ -943,6 +961,7 @@
 		5898E4F6181E6FE8004AC185 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A4C32C41820FCC900A8DECC /* libsqlite3.0.dylib */,
 				5898E4F7181E6FE8004AC185 /* UIKit.framework */,
 				5898E4F9181E6FE8004AC185 /* Foundation.framework */,
 				5898E4FB181E6FE8004AC185 /* CoreGraphics.framework */,
@@ -953,6 +972,7 @@
 		5898E4FD181E6FE8004AC185 /* ZYOrderDishes_new */ = {
 			isa = PBXGroup;
 			children = (
+				4A4C32BE1820FBB900A8DECC /* Main */,
 				5898E506181E6FE8004AC185 /* ZYAppDelegate.h */,
 				5898E507181E6FE8004AC185 /* ZYAppDelegate.m */,
 				5898E50F181E6FE8004AC185 /* ZYViewController.h */,
@@ -1289,6 +1309,7 @@
 				4A4C32BB1820F16D00A8DECC /* 红星.jpg in Resources */,
 				4A4C32BC1820F16D00A8DECC /* 花雕.jpg in Resources */,
 				4A4C32BD1820F16D00A8DECC /* 茅台.jpg in Resources */,
+				4A4C32C31820FBE800A8DECC /* ZYMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1305,6 +1326,7 @@
 				4A4C30B71820F14B00A8DECC /* FMDatabase.m in Sources */,
 				4A4C30B81820F14B00A8DECC /* FMDatabaseAdditions.m in Sources */,
 				4A4C30B91820F14B00A8DECC /* FMResultSet.m in Sources */,
+				4A4C32C21820FBE800A8DECC /* ZYMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

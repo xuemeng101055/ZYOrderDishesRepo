@@ -10,6 +10,11 @@
 
 @interface ZYViewController : UIViewController
 {
-    
+    UIView *_settingView;
 }
+
+@property (nonatomic, retain)UIView *settingView;
+
+- (IBAction)buttonClick:(id)sender;
+
 @end
