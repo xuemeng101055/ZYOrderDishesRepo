@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1868771821F3C7005BFDF2 /* ZYDishGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */; };
+		4A18687B1821F868005BFDF2 /* ZYDishGroupDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */; };
 		4A4C30AE1820F14300A8DECC /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C30AD1820F14300A8DECC /* database.sqlite */; };
 		4A4C30B71820F14B00A8DECC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C30B11820F14B00A8DECC /* FMDatabase.m */; };
 		4A4C30B81820F14B00A8DECC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C30B31820F14B00A8DECC /* FMDatabaseAdditions.m */; };
@@ -276,7 +278,6 @@
 		4A4C32D91821054800A8DECC /* ZYNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32D71821054800A8DECC /* ZYNormalViewController.m */; };
 		4A4C32DA1821054800A8DECC /* ZYNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */; };
 		4A4C32DE182105DD00A8DECC /* ZYDatabaseUitl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */; };
-		4A4C32E11821069200A8DECC /* ZYDatabaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32E01821069200A8DECC /* ZYDatabaseDao.m */; };
 		582EE0F818214BC100E17C81 /* ZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582EE0F618214BC100E17C81 /* ZYSettingViewController.m */; };
 		582EE0F918214BC100E17C81 /* ZYSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582EE0F718214BC100E17C81 /* ZYSettingViewController.xib */; };
 		582EE0FB182158BD00E17C81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582EE0FA182158BD00E17C81 /* QuartzCore.framework */; };
@@ -294,6 +295,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A1868751821F3C7005BFDF2 /* ZYDishGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDishGroupModel.h; sourceTree = "<group>"; };
+		4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishGroupModel.m; sourceTree = "<group>"; };
+		4A1868791821F868005BFDF2 /* ZYDishGroupDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDishGroupDao.h; sourceTree = "<group>"; };
+		4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishGroupDao.m; sourceTree = "<group>"; };
 		4A4C30AD1820F14300A8DECC /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
 		4A4C30B01820F14B00A8DECC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		4A4C30B11820F14B00A8DECC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -572,8 +577,6 @@
 		4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYNormalViewController.xib; sourceTree = "<group>"; };
 		4A4C32DC182105DD00A8DECC /* ZYDatabaseUitl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDatabaseUitl.h; sourceTree = "<group>"; };
 		4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDatabaseUitl.m; sourceTree = "<group>"; };
-		4A4C32DF1821069200A8DECC /* ZYDatabaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDatabaseDao.h; sourceTree = "<group>"; };
-		4A4C32E01821069200A8DECC /* ZYDatabaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDatabaseDao.m; sourceTree = "<group>"; };
 		582EE0F518214BC100E17C81 /* ZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSettingViewController.h; sourceTree = "<group>"; };
 		582EE0F618214BC100E17C81 /* ZYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYSettingViewController.m; sourceTree = "<group>"; };
 		582EE0F718214BC100E17C81 /* ZYSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYSettingViewController.xib; sourceTree = "<group>"; };
@@ -612,6 +615,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A1868741821F37C005BFDF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A1868751821F3C7005BFDF2 /* ZYDishGroupModel.h */,
+				4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A1868781821F6A2005BFDF2 /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				4A1868791821F868005BFDF2 /* ZYDishGroupDao.h */,
+				4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
 		4A4C30AC1820F13A00A8DECC /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
@@ -1006,10 +1027,10 @@
 		4A4C32DB182105AA00A8DECC /* DatabaseOpreation */ = {
 			isa = PBXGroup;
 			children = (
+				4A1868781821F6A2005BFDF2 /* Dao */,
+				4A1868741821F37C005BFDF2 /* Model */,
 				4A4C32DC182105DD00A8DECC /* ZYDatabaseUitl.h */,
 				4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */,
-				4A4C32DF1821069200A8DECC /* ZYDatabaseDao.h */,
-				4A4C32E01821069200A8DECC /* ZYDatabaseDao.m */,
 			);
 			path = DatabaseOpreation;
 			sourceTree = "<group>";
@@ -1427,8 +1448,9 @@
 				4A4C32D41821052F00A8DECC /* ZYReconmmentViewController.m in Sources */,
 				4A4C32D91821054800A8DECC /* ZYNormalViewController.m in Sources */,
 				4A4C32DE182105DD00A8DECC /* ZYDatabaseUitl.m in Sources */,
-				4A4C32E11821069200A8DECC /* ZYDatabaseDao.m in Sources */,
 				582EE0F818214BC100E17C81 /* ZYSettingViewController.m in Sources */,
+				4A1868771821F3C7005BFDF2 /* ZYDishGroupModel.m in Sources */,
+				4A18687B1821F868005BFDF2 /* ZYDishGroupDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

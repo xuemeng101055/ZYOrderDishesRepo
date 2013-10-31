@@ -35,7 +35,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    _dishSuperTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.dishSuperTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     
     
     [_dishSuperTableView release];
