@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZYDishGroupModel.h"
 
 @interface ZYMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
@@ -15,7 +16,8 @@
     UIViewController        *_currentViewController;
 }
 
-@property (nonatomic,retain) NSArray              *menuImageArray;
-@property (nonatomic,retain) NSArray              *menuHighlightedImageArray;
+@property (nonatomic, retain) NSArray *allGroupArray;
+@property (nonatomic, retain) NSArray              *menuImageArray;
+@property (nonatomic, retain) NSArray              *menuHighlightedImageArray;
 
 @end

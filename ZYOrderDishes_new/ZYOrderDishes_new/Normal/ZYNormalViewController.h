@@ -8,6 +8,12 @@
 
 #import "ZYDishSuperViewController.h"
 
-@interface ZYNormalViewController : ZYDishSuperViewController
+@interface ZYNormalViewController : ZYDishSuperViewController<UIScrollViewDelegate>
+{
+    IBOutlet UIScrollView *_dishesImageScrollView;
+}
+
+- (IBAction)myOrderButton:(id)sender;
+- (IBAction)orderMyDishes:(id)sender;
 
 @end

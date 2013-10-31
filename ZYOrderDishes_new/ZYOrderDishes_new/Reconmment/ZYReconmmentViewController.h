@@ -9,5 +9,8 @@
 #import "ZYDishSuperViewController.h"
 
 @interface ZYReconmmentViewController : ZYDishSuperViewController
+{
+    IBOutlet UITableView *_reconmmentTableView;
+}
 
 @end

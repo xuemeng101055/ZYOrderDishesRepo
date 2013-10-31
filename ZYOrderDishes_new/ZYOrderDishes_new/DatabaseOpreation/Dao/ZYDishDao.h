@@ -1,5 +1,5 @@
 //
-//  ZYDishGroupDao.h
+//  ZYDishDao.h
 //  ZYOrderDishes_new
 //
 //  Created by wangwei on 13-10-31.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZYDishGroupDao : NSObject
+@interface ZYDishDao : NSObject
 
-+ (NSArray *)getAllDishGroup;
++ (NSArray *)getDishesWith:(NSString *)groupId kindName:(NSString *)kindName;
 
 @end

@@ -26,7 +26,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
+}
+
+- (void)setScrollImage:(NSIndexPath *)indexPath
+{
+    
+}
+
+#pragma -
+#pragma mark UIScrollViewDelegate Method
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    
+}
+
+- (IBAction)myOrderButton:(id)sender
+{
+    
+}
+- (IBAction)orderMyDishes:(id)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning

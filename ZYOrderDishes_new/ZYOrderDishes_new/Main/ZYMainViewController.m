@@ -10,6 +10,7 @@
 #import "ZYReconmmentViewController.h"
 #import "ZYNormalViewController.h"
 #import "ZYDishKindCell.h"
+#import "ZYDishGroupDao.h"
 
 @interface ZYMainViewController ()
 
@@ -18,6 +19,7 @@
 @implementation ZYMainViewController
 @synthesize menuImageArray = _menuImageArray;
 @synthesize menuHighlightedImageArray = _menuHighlightedImageArray;
+@synthesize allGroupArray = _allGroupArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,12 +34,16 @@
 {
     [_menuHighlightedImageArray release];
     [_menuImageArray release];
+    [_allGroupArray release];
     [super dealloc];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   self.allGroupArray = [self getDishGroupData];
+    
     _dishKindTableView.backgroundColor = [UIColor clearColor];
     _currentSelectRow = 0;
     
@@ -67,6 +73,11 @@
     [self setCurrentViewController:reconmmentViewController];
     [reconmmentViewController release];
 
+}
+
+- (NSArray *)getDishGroupData
+{
+    return [ZYDishGroupDao getAllDishGroup];
 }
 
 #pragma -
@@ -100,14 +111,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     _currentSelectRow = indexPath.row;
+    ZYDishGroupModel *groupModel = [_allGroupArray objectAtIndex:indexPath.row];
     
     if (indexPath.row == 0) {
-        ZYReconmmentViewController *reconmmentViewController = [[ZYReconmmentViewController alloc] init];
+        ZYReconmmentViewController *reconmmentViewController = [[ZYReconmmentViewController alloc] initWithDishGroup:groupModel];
         [self setCurrentViewController:reconmmentViewController];
         [reconmmentViewController release];
     }else
     {
-        ZYNormalViewController *normalViewController = [[ZYNormalViewController alloc] init];
+        ZYNormalViewController *normalViewController = [[ZYNormalViewController alloc] initWithDishGroup:groupModel];
         [self setCurrentViewController:normalViewController];
         [normalViewController release];
     }
