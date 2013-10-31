@@ -73,21 +73,33 @@
             _settingView.frame = CGRectMake(20, 50, 300, 480);
             _settingView.alpha = 1;
             [UIView commitAnimations];
+            _isShowing = !_isShowing;
         }else{
-            [UIView beginAnimations:nil context:nil];
-            [UIView setAnimationDuration:.5];
-            _settingView.frame = CGRectMake(-340, 50, 300, 480);
-            _settingView.alpha = 1;
-            
-            if (_settingViewController.showView != nil) {
-                [_settingViewController.showView removeFromSuperview];
-                _settingViewController.isShowing = NO;
-            }
-            
-            [UIView commitAnimations];
+            [self hidenSetView];
         }
-        _isShowing = !_isShowing;
+        
     }
+}
+
+- (void)hidenSetView
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:.5];
+    _settingView.frame = CGRectMake(-340, 50, 300, 480);
+    _settingView.alpha = 1;
+    
+    if (_settingViewController.showView != nil) {
+        [_settingViewController.showView removeFromSuperview];
+        _settingViewController.isShowing = NO;
+    }
+    
+    [UIView commitAnimations];
+    _isShowing = !_isShowing;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self hidenSetView];
 }
 
 - (void)didReceiveMemoryWarning
