@@ -10,7 +10,7 @@
 #import "ZYDishGroupModel.h"
 #import "ZYDetailView.h"
 
-@interface ZYDishSuperViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,DetailViewDelegate>
+@interface ZYDishSuperViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate,DetailViewDelegate>
 {
     IBOutlet UITableView *_dishSuperTableView;
     
@@ -22,12 +22,17 @@
     int _currentSelectRow;
     
     BOOL _sectionFlag[10];
+    
+    //搜索
+    UISearchDisplayController *_searchDisplay;
+    NSMutableArray *_searchResultArray;
 }
 
 @property (nonatomic ,retain) NSMutableArray *allDishesArray;
 @property (nonatomic, retain) ZYDishGroupModel *dishGroupModel;
 @property (nonatomic, retain) UITableView *dishSuperTableView;
 @property (nonatomic, retain) NSArray *allKindArray;
+@property (nonatomic, retain) NSMutableArray *searchResultArray;
 
 - (IBAction)showDetail:(id)sender;
 
