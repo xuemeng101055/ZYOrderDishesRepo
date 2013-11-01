@@ -33,7 +33,6 @@
     while ([dataRs next]) {
         ZYDishModel *dishesModel = [[ZYDishModel alloc] init];
         
-        
         dishesModel.dishID = [NSString stringWithFormat:@"%d",[dataRs intForColumn:@"id"]];
         dishesModel.groupID = [NSString stringWithFormat:@"%d",[dataRs intForColumn:@"groupID"]];
         dishesModel.kind = [dataRs stringForColumn:@"iKind"];
@@ -48,9 +47,8 @@
     
     [dataRs close];
     [db close];
+    
     return [dishesArray autorelease];
-    
-    
 }
 
 @end

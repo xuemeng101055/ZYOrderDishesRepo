@@ -32,8 +32,6 @@
     
     FMResultSet *dataRs = [db executeQuery:@"select *from groupTable"];
     
-    
-    
     while ([dataRs next]) {
         ZYDishGroupModel *dishGroup = [[ZYDishGroupModel alloc]  init];
         

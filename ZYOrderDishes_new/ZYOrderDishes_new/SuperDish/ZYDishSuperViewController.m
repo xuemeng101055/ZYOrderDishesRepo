@@ -71,8 +71,6 @@
     //搜索结果表的数据源和代理
     _searchDisplay.searchResultsDataSource = self;
     _searchDisplay.searchResultsDelegate = self;
-    
-
 }
 
 - (void)getDishesData

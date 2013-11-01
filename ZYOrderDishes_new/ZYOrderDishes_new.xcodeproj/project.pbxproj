@@ -295,6 +295,10 @@
 		5898E50E181E6FE8004AC185 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5898E50D181E6FE8004AC185 /* Default-568h@2x.png */; };
 		5898E511181E6FE8004AC185 /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898E510181E6FE8004AC185 /* ZYViewController.m */; };
 		5898E514181E6FE8004AC185 /* ZYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5898E512181E6FE8004AC185 /* ZYViewController.xib */; };
+		58C8C8301823AD7B00B78819 /* ZYOrderDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C82F1823AD7B00B78819 /* ZYOrderDao.m */; };
+		58C8C8331823AD8D00B78819 /* ZYRecordDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C8321823AD8D00B78819 /* ZYRecordDao.m */; };
+		58C8C8361823ADD500B78819 /* ZYOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C8351823ADD500B78819 /* ZYOrderModel.m */; };
+		58C8C8391823ADEF00B78819 /* ZYRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C8381823ADEF00B78819 /* ZYRecordModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -606,6 +610,14 @@
 		5898E50F181E6FE8004AC185 /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
 		5898E510181E6FE8004AC185 /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
 		5898E513181E6FE8004AC185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZYViewController.xib; sourceTree = "<group>"; };
+		58C8C82E1823AD7B00B78819 /* ZYOrderDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYOrderDao.h; sourceTree = "<group>"; };
+		58C8C82F1823AD7B00B78819 /* ZYOrderDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYOrderDao.m; sourceTree = "<group>"; };
+		58C8C8311823AD8D00B78819 /* ZYRecordDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecordDao.h; sourceTree = "<group>"; };
+		58C8C8321823AD8D00B78819 /* ZYRecordDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRecordDao.m; sourceTree = "<group>"; };
+		58C8C8341823ADD500B78819 /* ZYOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYOrderModel.h; sourceTree = "<group>"; };
+		58C8C8351823ADD500B78819 /* ZYOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYOrderModel.m; sourceTree = "<group>"; };
+		58C8C8371823ADEF00B78819 /* ZYRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecordModel.h; sourceTree = "<group>"; };
+		58C8C8381823ADEF00B78819 /* ZYRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYRecordModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,6 +650,10 @@
 				4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */,
 				4A138172182237140019078B /* ZYDishModel.h */,
 				4A138173182237140019078B /* ZYDishModel.m */,
+				58C8C8341823ADD500B78819 /* ZYOrderModel.h */,
+				58C8C8351823ADD500B78819 /* ZYOrderModel.m */,
+				58C8C8371823ADEF00B78819 /* ZYRecordModel.h */,
+				58C8C8381823ADEF00B78819 /* ZYRecordModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -649,6 +665,10 @@
 				4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */,
 				4A13816F182237070019078B /* ZYDishDao.h */,
 				4A138170182237070019078B /* ZYDishDao.m */,
+				58C8C82E1823AD7B00B78819 /* ZYOrderDao.h */,
+				58C8C82F1823AD7B00B78819 /* ZYOrderDao.m */,
+				58C8C8311823AD8D00B78819 /* ZYRecordDao.h */,
+				58C8C8321823AD8D00B78819 /* ZYRecordDao.m */,
 			);
 			path = Dao;
 			sourceTree = "<group>";
@@ -1477,6 +1497,10 @@
 				4A138171182237070019078B /* ZYDishDao.m in Sources */,
 				4A138174182237140019078B /* ZYDishModel.m in Sources */,
 				4A138177182245F10019078B /* ZYDetailView.m in Sources */,
+				58C8C8301823AD7B00B78819 /* ZYOrderDao.m in Sources */,
+				58C8C8331823AD8D00B78819 /* ZYRecordDao.m in Sources */,
+				58C8C8361823ADD500B78819 /* ZYOrderModel.m in Sources */,
+				58C8C8391823ADEF00B78819 /* ZYRecordModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
