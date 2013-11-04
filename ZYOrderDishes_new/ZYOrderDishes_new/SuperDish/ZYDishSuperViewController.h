@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ZYDishGroupModel.h"
 #import "ZYDetailView.h"
+#import "ZYDishModel.h"
 
 @interface ZYDishSuperViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate,DetailViewDelegate>
 {
@@ -16,6 +17,8 @@
     
     
     ZYDishGroupModel *_dishGroupModel;
+    ZYDishModel *_currentDishModel;
+    
     NSArray *_allKindArray;
     NSMutableArray *_allDishesArray;
     
@@ -30,6 +33,7 @@
 
 @property (nonatomic ,retain) NSMutableArray *allDishesArray;
 @property (nonatomic, retain) ZYDishGroupModel *dishGroupModel;
+@property (nonatomic, retain) ZYDishModel *currentDishModel;
 @property (nonatomic, retain) UITableView *dishSuperTableView;
 @property (nonatomic, retain) NSArray *allKindArray;
 @property (nonatomic, retain) NSMutableArray *searchResultArray;

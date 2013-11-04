@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ZYOrderModel.h"
 @interface ZYOrderDao : NSObject
 
+//操作插入，更新操作
++ (BOOL)updateOrAddDishes:(ZYOrderModel *)orderModel;
+
+
++ (NSArray *)getAllOrder;
 @end

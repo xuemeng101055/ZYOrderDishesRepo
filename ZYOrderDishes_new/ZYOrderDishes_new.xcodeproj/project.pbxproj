@@ -12,6 +12,10 @@
 		4A138177182245F10019078B /* ZYDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A138176182245F10019078B /* ZYDetailView.m */; };
 		4A1868771821F3C7005BFDF2 /* ZYDishGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */; };
 		4A18687B1821F868005BFDF2 /* ZYDishGroupDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */; };
+		4A2B036618273683005C836D /* ZYMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B036418273683005C836D /* ZYMyOrderViewController.m */; };
+		4A2B036718273683005C836D /* ZYMyOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B036518273683005C836D /* ZYMyOrderViewController.xib */; };
+		4A2B036A182738F0005C836D /* ZYMyOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B0369182738F0005C836D /* ZYMyOrderCell.m */; };
+		4A2B036C1827391B005C836D /* ZYMyOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B036B1827391B005C836D /* ZYMyOrderCell.xib */; };
 		4A4C30AE1820F14300A8DECC /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C30AD1820F14300A8DECC /* database.sqlite */; };
 		4A4C30B71820F14B00A8DECC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C30B11820F14B00A8DECC /* FMDatabase.m */; };
 		4A4C30B81820F14B00A8DECC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C30B31820F14B00A8DECC /* FMDatabaseAdditions.m */; };
@@ -312,6 +316,12 @@
 		4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishGroupModel.m; sourceTree = "<group>"; };
 		4A1868791821F868005BFDF2 /* ZYDishGroupDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDishGroupDao.h; sourceTree = "<group>"; };
 		4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishGroupDao.m; sourceTree = "<group>"; };
+		4A2B036318273683005C836D /* ZYMyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMyOrderViewController.h; sourceTree = "<group>"; };
+		4A2B036418273683005C836D /* ZYMyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMyOrderViewController.m; sourceTree = "<group>"; };
+		4A2B036518273683005C836D /* ZYMyOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMyOrderViewController.xib; sourceTree = "<group>"; };
+		4A2B0368182738F0005C836D /* ZYMyOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMyOrderCell.h; sourceTree = "<group>"; };
+		4A2B0369182738F0005C836D /* ZYMyOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMyOrderCell.m; sourceTree = "<group>"; };
+		4A2B036B1827391B005C836D /* ZYMyOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMyOrderCell.xib; sourceTree = "<group>"; };
 		4A4C30AD1820F14300A8DECC /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
 		4A4C30B01820F14B00A8DECC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		4A4C30B11820F14B00A8DECC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -671,6 +681,19 @@
 				58C8C8321823AD8D00B78819 /* ZYRecordDao.m */,
 			);
 			path = Dao;
+			sourceTree = "<group>";
+		};
+		4A2B036218273660005C836D /* MyOrder */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B036318273683005C836D /* ZYMyOrderViewController.h */,
+				4A2B036418273683005C836D /* ZYMyOrderViewController.m */,
+				4A2B036518273683005C836D /* ZYMyOrderViewController.xib */,
+				4A2B0368182738F0005C836D /* ZYMyOrderCell.h */,
+				4A2B0369182738F0005C836D /* ZYMyOrderCell.m */,
+				4A2B036B1827391B005C836D /* ZYMyOrderCell.xib */,
+			);
+			path = MyOrder;
 			sourceTree = "<group>";
 		};
 		4A4C30AC1820F13A00A8DECC /* FMDB */ = {
@@ -1121,6 +1144,7 @@
 		5898E4FD181E6FE8004AC185 /* ZYOrderDishes_new */ = {
 			isa = PBXGroup;
 			children = (
+				4A2B036218273660005C836D /* MyOrder */,
 				4A13817818224BEC0019078B /* Order */,
 				582EE0F418214B7B00E17C81 /* Setting */,
 				4A4C32DB182105AA00A8DECC /* DatabaseOpreation */,
@@ -1469,6 +1493,8 @@
 				4A4C32D51821052F00A8DECC /* ZYReconmmentViewController.xib in Resources */,
 				4A4C32DA1821054800A8DECC /* ZYNormalViewController.xib in Resources */,
 				582EE0F918214BC100E17C81 /* ZYSettingViewController.xib in Resources */,
+				4A2B036718273683005C836D /* ZYMyOrderViewController.xib in Resources */,
+				4A2B036C1827391B005C836D /* ZYMyOrderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1501,6 +1527,8 @@
 				58C8C8331823AD8D00B78819 /* ZYRecordDao.m in Sources */,
 				58C8C8361823ADD500B78819 /* ZYOrderModel.m in Sources */,
 				58C8C8391823ADEF00B78819 /* ZYRecordModel.m in Sources */,
+				4A2B036618273683005C836D /* ZYMyOrderViewController.m in Sources */,
+				4A2B036A182738F0005C836D /* ZYMyOrderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

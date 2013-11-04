@@ -9,5 +9,20 @@
 #import <Foundation/Foundation.h>
 
 @interface ZYOrderModel : NSObject
+{
+    NSString *_orderID;
+    NSString *_dishName;
+    NSString *_dishPrice;
+    NSString *_kind;
+    NSString *_menuNum;
+    NSString *_remark;
+}
+
+@property(nonatomic,copy) NSString *orderID;
+@property(nonatomic,copy) NSString *dishName;
+@property(nonatomic,copy) NSString *dishPrice;
+@property(nonatomic,copy) NSString *kind;
+@property(nonatomic,copy) NSString *menuNum;
+@property(nonatomic,copy) NSString *remark;
 
 @end

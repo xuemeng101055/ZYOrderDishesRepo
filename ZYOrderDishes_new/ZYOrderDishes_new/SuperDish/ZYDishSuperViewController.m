@@ -9,7 +9,6 @@
 
 #import "ZYDishSuperViewController.h"
 #import "ZYDishDao.h"
-#import "ZYDishModel.h"
 
 @interface ZYDishSuperViewController ()
 
@@ -21,6 +20,7 @@
 @synthesize allKindArray = _allKindArray;
 @synthesize allDishesArray = _allDishesArray;
 @synthesize searchResultArray = _searchResultArray;
+@synthesize currentDishModel = _currentDishModel;
 
 - (id)initWithDishGroup:(ZYDishGroupModel *)groupModel
 {
@@ -133,6 +133,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (tableView == _dishSuperTableView) {
+        _currentDishModel = [[_allDishesArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+    }
+    else{
+        _currentDishModel = [_searchResultArray objectAtIndex:indexPath.row];
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
