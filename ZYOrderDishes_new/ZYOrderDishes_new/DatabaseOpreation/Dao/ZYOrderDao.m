@@ -31,7 +31,7 @@
     //如果我们的表中已经含有该菜品的内容，只需要更新我们的menunum
     if ([rs next]) {
         //更新操作
-        [db executeUpdate:@"update orderTable set [menuNum] = ? where [menuName] = ?",[NSNumber numberWithInt:[rs intForColumn:@"menuNum"] + 1],orderModel.dishName];
+        [db executeUpdate:@"update orderTable set [menuNum] = ? where [menuName] = ?",[NSNumber numberWithInt:[rs intForColumn:@"menuNum"] + [orderModel.menuNum intValue]],orderModel.dishName];
         
     }else{
         //插入操作

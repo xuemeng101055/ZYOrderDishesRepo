@@ -8,7 +8,6 @@
 #define HEADER_BUTTON_TAG 100
 
 #import "ZYDishSuperViewController.h"
-#import "ZYDishDao.h"
 
 @interface ZYDishSuperViewController ()
 
@@ -43,7 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     
     self.allKindArray = [_dishGroupModel.name componentsSeparatedByString:@"|"];
     
@@ -83,6 +82,92 @@
     }
 }
 
+- (void)showAlertView
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"我要点菜" message:@"\n\n\n\n\n\n" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+    [alert show];
+    [alert release];
+}
+
+#pragma mark -
+#pragma mark UIAlertViewDelegate Method
+
+- (void)willPresentAlertView:(UIAlertView *)alertView
+{
+    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 40, 200, 30)];
+    nameLabel.text = [NSString stringWithFormat:@"菜名: %@",_currentDishModel.name];
+    nameLabel.backgroundColor = [UIColor clearColor];
+    nameLabel.textColor = [UIColor whiteColor];
+    [alertView addSubview:nameLabel];
+    [nameLabel release];
+    
+    UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 75, 200, 30)];
+    priceLabel.text = [NSString stringWithFormat:@"价格: %@",_currentDishModel.price];
+    priceLabel.backgroundColor = [UIColor clearColor];
+    priceLabel.textColor = [UIColor whiteColor];
+    [alertView addSubview:priceLabel];
+    [priceLabel release];
+    
+    UILabel *numLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 110, 50, 30)];
+    numLabel.text = @"份数: ";
+    numLabel.backgroundColor = [UIColor clearColor];
+    numLabel.textColor = [UIColor whiteColor];
+    [alertView addSubview:numLabel];
+    [numLabel release];
+    
+    UITextField *numText = [[UITextField alloc] initWithFrame:CGRectMake(65, 110, 200, 30)];
+    numText.tag = 1000;
+    numText.textColor = [UIColor whiteColor];
+    numText.borderStyle = UITextBorderStyleLine;
+    numText.backgroundColor = [UIColor clearColor];
+    numText.clearButtonMode=UITextFieldViewModeWhileEditing;
+    numText.text = @"1";
+    [alertView addSubview:numText];
+    [numText release];
+    
+    UILabel *remarkLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 145, 50, 30)];
+    remarkLabel.text = @"备注: ";
+    remarkLabel.backgroundColor = [UIColor clearColor];
+    remarkLabel.textColor = [UIColor whiteColor];
+    [alertView addSubview:remarkLabel];
+    [remarkLabel release];
+    
+    UITextField *remarkText = [[UITextField alloc] initWithFrame:CGRectMake(65, 145, 200, 30)];
+    remarkText.tag = 2000;
+    remarkText.textColor = [UIColor whiteColor];
+    remarkText.borderStyle = UITextBorderStyleLine;
+    remarkText.backgroundColor = [UIColor clearColor];
+    remarkText.clearButtonMode=UITextFieldViewModeWhileEditing;
+    remarkText.placeholder = @"请输入备注";
+    [alertView addSubview:remarkText];
+    [remarkText release];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        NSLog(@"点击了确定按钮");
+        //插入点菜数据
+        ZYOrderModel *orderModel = [[ZYOrderModel alloc] init];
+        orderModel.dishName = _currentDishModel.name;
+        orderModel.dishPrice = _currentDishModel.price;
+        orderModel.kind = _currentDishModel.kind;
+        
+        UITextField *numText = (UITextField *)[alertView viewWithTag:1000];
+        orderModel.menuNum = numText.text;
+        if ([orderModel.menuNum intValue] < 1) {
+            orderModel.menuNum = @"1";
+        }
+        UITextField *remarkText = (UITextField *)[alertView viewWithTag:2000];
+        orderModel.remark = remarkText.text;
+        
+        [ZYOrderDao updateOrAddDishes:orderModel];
+
+        [orderModel release];
+
+    }
+}
+
 #pragma mark -
 #pragma mark UITableViewDelegate
 
@@ -99,7 +184,7 @@
         return [_searchResultArray count];
     }
 }
-    
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     if (tableView == _dishSuperTableView) {
@@ -127,7 +212,7 @@
     }
     
     cell.textLabel.text = dishModel.name;
-     
+    
     return cell;
 }
 

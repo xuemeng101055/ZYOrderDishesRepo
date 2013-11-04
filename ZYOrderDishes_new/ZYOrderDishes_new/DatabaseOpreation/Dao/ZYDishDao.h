@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ZYDishModel.h"
 
 @interface ZYDishDao : NSObject
 

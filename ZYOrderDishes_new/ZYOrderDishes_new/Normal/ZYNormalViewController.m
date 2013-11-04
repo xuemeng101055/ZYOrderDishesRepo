@@ -9,7 +9,6 @@
 #import "ZYNormalViewController.h"
 #import "ZYMyOrderViewController.h"
 #import "ZYAppDelegate.h"
-#import "ZYOrderDao.h"
 
 @interface ZYNormalViewController ()
 
@@ -55,31 +54,10 @@
     [app.window.rootViewController presentViewController:myOrderViewController animated:YES completion:nil];
     [myOrderViewController release];
 }
+
 - (IBAction)orderMyDishes:(id)sender
 {
-    
-    //插入点菜数据
-    
-    ZYOrderModel *orderModel = [[ZYOrderModel alloc] init];
-    orderModel.dishName = _currentDishModel.name;
-    orderModel.dishPrice = _currentDishModel.price;
-    orderModel.remark = @"变态辣";
-    
-    orderModel.kind = _currentDishModel.kind;
-    
-    BOOL isUpdateSuccess = [ZYOrderDao updateOrAddDishes:orderModel];
-    
-    if (isUpdateSuccess) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"点菜" message:@"成功" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
-
-    }else{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"点菜" message:@"失败" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
-        [alert show];
-        [alert release];
-    }
-    [orderModel release];
+    [self showAlertView];
 }
 
 - (void)didReceiveMemoryWarning

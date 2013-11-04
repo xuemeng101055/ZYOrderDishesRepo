@@ -8,7 +8,6 @@
 
 #import "ZYDishDao.h"
 #import "ZYDatabaseUitl.h"
-#import "ZYDishModel.h"
 
 @implementation ZYDishDao
 
