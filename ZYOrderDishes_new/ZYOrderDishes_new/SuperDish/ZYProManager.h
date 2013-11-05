@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface ZYProManager : NSObject
+{
+    NSMutableArray *_tempOrderArray;
+}
+@property (nonatomic, retain)NSMutableArray *tempOrderArray;
 
 + (ZYProManager *)getSingletonManager;
 

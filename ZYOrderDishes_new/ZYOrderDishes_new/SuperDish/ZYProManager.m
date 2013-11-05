@@ -11,6 +11,13 @@
 static ZYProManager *manager = nil;
 
 @implementation ZYProManager
+@synthesize tempOrderArray = _tempOrderArray;
+
+- (void)dealloc
+{
+    [_tempOrderArray release];
+    [super dealloc];
+}
 
 + (ZYProManager *)getSingletonManager
 {
@@ -22,7 +29,7 @@ static ZYProManager *manager = nil;
     return manager;
 }
 
-+ (id) allocWithZone:(NSZone *)zone
++ (id)allocWithZone:(NSZone *)zone
 {
     @synchronized (self) {
         if (manager == nil) {
@@ -36,6 +43,15 @@ static ZYProManager *manager = nil;
 - (id)copyWithZone:(NSZone *)zone
 {
     return self;
+}
+
+- (id)init
+{
+    @synchronized(self) {
+        [super init];
+        self.tempOrderArray = [[[NSMutableArray alloc] initWithCapacity:0] autorelease];
+        return self;
+    }
 }
 
 - (id)retain
@@ -56,14 +72,6 @@ static ZYProManager *manager = nil;
 - (id) autorelease
 {
     return self;
-}
-
-- (id)init
-{
-    @synchronized(self) {
-        [super init];
-        return self;
-    }
 }
 
 @end

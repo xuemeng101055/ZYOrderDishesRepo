@@ -9,6 +9,7 @@
 #import "ZYAppDelegate.h"
 #import "ZYDatabaseUitl.h"
 #import "ZYViewController.h"
+#import "ZYProManager.h"
 
 @implementation ZYAppDelegate
 
@@ -23,7 +24,11 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    // 把数据库从工程中移到沙盒
     [self moveDataBase];
+    // 创建ZYProManager
+    [ZYProManager getSingletonManager];
+    
     self.viewController = [[[ZYViewController alloc] initWithNibName:@"ZYViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
@@ -47,13 +52,13 @@
         
         if (![fileManager copyItemAtPath:file toPath:toPath error:&error]) {
             NSLog(@"error == %@",error);
-        }else{
+        }
+        else{
             NSLog(@"success");
         }
     }else{
         NSLog(@"已经存在");
     }
-    
 }
 
 
