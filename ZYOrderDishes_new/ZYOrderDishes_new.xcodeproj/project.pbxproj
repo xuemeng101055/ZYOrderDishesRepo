@@ -1098,9 +1098,9 @@
 		4A4C32D01821050000A8DECC /* Normal */ = {
 			isa = PBXGroup;
 			children = (
-				4A1F42C8182885F900135019 /* ZYNormalViewController.xib */,
 				4A4C32D61821054800A8DECC /* ZYNormalViewController.h */,
 				4A4C32D71821054800A8DECC /* ZYNormalViewController.m */,
+				4A1F42C8182885F900135019 /* ZYNormalViewController.xib */,
 			);
 			path = Normal;
 			sourceTree = "<group>";

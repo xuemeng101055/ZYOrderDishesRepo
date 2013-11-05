@@ -22,14 +22,16 @@
     
     NSArray *_allKindArray;
     NSMutableArray *_allDishesArray;
+    NSMutableArray *_allOrderArray;
     
     int _currentSelectRow;
-    
+    int _currentSelectSection;
     BOOL _sectionFlag[10];
     
     //搜索
     UISearchDisplayController *_searchDisplay;
     NSMutableArray *_searchResultArray;
+    
 }
 
 @property (nonatomic ,retain) NSMutableArray *allDishesArray;
@@ -42,5 +44,6 @@
 - (IBAction)showDetail:(id)sender;
 - (void)showAlertView;
 - (id)initWithDishGroup:(ZYDishGroupModel *)groupModel;
+- (void)setImage;
 
 @end

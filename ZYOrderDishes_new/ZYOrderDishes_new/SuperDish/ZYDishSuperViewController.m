@@ -42,7 +42,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
+    _currentSelectSection = 0;
     
     self.allKindArray = [_dishGroupModel.name componentsSeparatedByString:@"|"];
     
@@ -178,7 +179,6 @@
 {
     if (tableView == _dishSuperTableView) {
         if (_sectionFlag[section]) {
-            NSLog(@"xxxx");
             return [[_allDishesArray objectAtIndex:section] count];
         }
         return 0;
@@ -221,6 +221,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    _currentSelectSection = indexPath.section;
+    _currentSelectRow = indexPath.row;
     if (tableView == _dishSuperTableView) {
         _currentDishModel = [[_allDishesArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
     }
@@ -229,7 +231,13 @@
     }
     NSString *imageName = _currentDishModel.picName;
     _dishImageView.image = [UIImage imageNamed:imageName];
+    [self setImage];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)setImage
+{
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

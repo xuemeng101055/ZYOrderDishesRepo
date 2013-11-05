@@ -28,8 +28,35 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _dishesImageScrollView.contentSize = CGSizeMake(self.view.frame.size.width, 0);
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+    _beforeSelectSection = 0;
+    [self setScrollViewImage];
+}
+
+- (void)setScrollViewImage
+{
+    
+    int count = [[_allDishesArray objectAtIndex:_currentSelectSection] count];
+    _dishesImageScrollView.contentSize = CGSizeMake(_dishesImageScrollView.frame.size.width * count, 0);
+    _dishesImageScrollView.contentOffset = CGPointMake(0, 0);
+    _dishesImageScrollView.pagingEnabled = YES;
+    
+    int i = 0;
+    
+    for (ZYDishModel *dishModel in [_allDishesArray objectAtIndex:_currentSelectSection]) {
+       
+        NSString *imageName = dishModel.picName;
+        
+       _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+        _imageView.frame = CGRectMake(i * _dishesImageScrollView.frame.size.width, 0, _dishesImageScrollView.frame.size.width, _dishesImageScrollView.frame.size.height);
+        [_dishesImageScrollView addSubview:_imageView];
+        [_imageView release];
+         i++;
+    }
+    
+    if(_currentSelectRow != 0){
+        NSLog(@"hehe");
+        [_dishesImageScrollView setContentOffset:CGPointMake(_dishesImageScrollView.frame.size.width * _currentSelectRow, 0)];
+    }
 }
 
 #pragma -
@@ -53,6 +80,20 @@
 - (IBAction)orderMyDishes:(id)sender
 {
     [self showAlertView];
+}
+
+- (void)setImage
+{
+    if (_currentSelectSection != _beforeSelectSection) {
+        
+        _beforeSelectSection = _currentSelectSection;
+        
+        [self setScrollViewImage];
+    }else{
+        NSLog(@"not change section");
+        [_dishesImageScrollView setContentOffset:CGPointMake(_dishesImageScrollView.frame.size.width * _currentSelectRow, 0)];
+    }
+   
 }
 
 - (void)didReceiveMemoryWarning
