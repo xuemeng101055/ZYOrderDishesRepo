@@ -303,6 +303,7 @@
 		5898E50E181E6FE8004AC185 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5898E50D181E6FE8004AC185 /* Default-568h@2x.png */; };
 		5898E511181E6FE8004AC185 /* ZYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5898E510181E6FE8004AC185 /* ZYViewController.m */; };
 		5898E514181E6FE8004AC185 /* ZYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5898E512181E6FE8004AC185 /* ZYViewController.xib */; };
+		589ED7E21828EA2A00B0A333 /* ZYProManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 589ED7E11828EA2A00B0A333 /* ZYProManager.m */; };
 		58C8C8301823AD7B00B78819 /* ZYOrderDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C82F1823AD7B00B78819 /* ZYOrderDao.m */; };
 		58C8C8331823AD8D00B78819 /* ZYRecordDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C8321823AD8D00B78819 /* ZYRecordDao.m */; };
 		58C8C8361823ADD500B78819 /* ZYOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C8C8351823ADD500B78819 /* ZYOrderModel.m */; };
@@ -630,6 +631,8 @@
 		5898E50F181E6FE8004AC185 /* ZYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYViewController.h; sourceTree = "<group>"; };
 		5898E510181E6FE8004AC185 /* ZYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYViewController.m; sourceTree = "<group>"; };
 		5898E513181E6FE8004AC185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZYViewController.xib; sourceTree = "<group>"; };
+		589ED7E01828EA2A00B0A333 /* ZYProManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProManager.h; sourceTree = "<group>"; };
+		589ED7E11828EA2A00B0A333 /* ZYProManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProManager.m; sourceTree = "<group>"; };
 		58C8C82E1823AD7B00B78819 /* ZYOrderDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYOrderDao.h; sourceTree = "<group>"; };
 		58C8C82F1823AD7B00B78819 /* ZYOrderDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYOrderDao.m; sourceTree = "<group>"; };
 		58C8C8311823AD8D00B78819 /* ZYRecordDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYRecordDao.h; sourceTree = "<group>"; };
@@ -1081,6 +1084,8 @@
 				4A4C32CC1821045300A8DECC /* ZYDishSuperViewController.xib */,
 				4A138175182245F10019078B /* ZYDetailView.h */,
 				4A138176182245F10019078B /* ZYDetailView.m */,
+				589ED7E01828EA2A00B0A333 /* ZYProManager.h */,
+				589ED7E11828EA2A00B0A333 /* ZYProManager.m */,
 			);
 			path = SuperDish;
 			sourceTree = "<group>";
@@ -1549,6 +1554,7 @@
 				4A2B036A182738F0005C836D /* ZYMyOrderCell.m in Sources */,
 				4A173B4118277C02009D4D20 /* ZYSendOrderViewController.m in Sources */,
 				4A173B4618277D2F009D4D20 /* ZYSelectTableViewController.m in Sources */,
+				589ED7E21828EA2A00B0A333 /* ZYProManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
