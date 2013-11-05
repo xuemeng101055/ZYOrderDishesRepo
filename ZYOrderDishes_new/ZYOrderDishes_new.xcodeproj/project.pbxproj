@@ -16,6 +16,7 @@
 		4A173B4718277D2F009D4D20 /* ZYSelectTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A173B4518277D2F009D4D20 /* ZYSelectTableViewController.xib */; };
 		4A1868771821F3C7005BFDF2 /* ZYDishGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */; };
 		4A18687B1821F868005BFDF2 /* ZYDishGroupDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */; };
+		4A1F42C9182885F900135019 /* ZYNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A1F42C8182885F900135019 /* ZYNormalViewController.xib */; };
 		4A2B036618273683005C836D /* ZYMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B036418273683005C836D /* ZYMyOrderViewController.m */; };
 		4A2B036718273683005C836D /* ZYMyOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B036518273683005C836D /* ZYMyOrderViewController.xib */; };
 		4A2B036A182738F0005C836D /* ZYMyOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B0369182738F0005C836D /* ZYMyOrderCell.m */; };
@@ -287,7 +288,6 @@
 		4A4C32D41821052F00A8DECC /* ZYReconmmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32D21821052F00A8DECC /* ZYReconmmentViewController.m */; };
 		4A4C32D51821052F00A8DECC /* ZYReconmmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32D31821052F00A8DECC /* ZYReconmmentViewController.xib */; };
 		4A4C32D91821054800A8DECC /* ZYNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32D71821054800A8DECC /* ZYNormalViewController.m */; };
-		4A4C32DA1821054800A8DECC /* ZYNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */; };
 		4A4C32DE182105DD00A8DECC /* ZYDatabaseUitl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */; };
 		582EE0F818214BC100E17C81 /* ZYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582EE0F618214BC100E17C81 /* ZYSettingViewController.m */; };
 		582EE0F918214BC100E17C81 /* ZYSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582EE0F718214BC100E17C81 /* ZYSettingViewController.xib */; };
@@ -326,6 +326,7 @@
 		4A1868761821F3C7005BFDF2 /* ZYDishGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishGroupModel.m; sourceTree = "<group>"; };
 		4A1868791821F868005BFDF2 /* ZYDishGroupDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDishGroupDao.h; sourceTree = "<group>"; };
 		4A18687A1821F868005BFDF2 /* ZYDishGroupDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDishGroupDao.m; sourceTree = "<group>"; };
+		4A1F42C8182885F900135019 /* ZYNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYNormalViewController.xib; sourceTree = "<group>"; };
 		4A2B036318273683005C836D /* ZYMyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMyOrderViewController.h; sourceTree = "<group>"; };
 		4A2B036418273683005C836D /* ZYMyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMyOrderViewController.m; sourceTree = "<group>"; };
 		4A2B036518273683005C836D /* ZYMyOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYMyOrderViewController.xib; sourceTree = "<group>"; };
@@ -607,7 +608,6 @@
 		4A4C32D31821052F00A8DECC /* ZYReconmmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYReconmmentViewController.xib; sourceTree = "<group>"; };
 		4A4C32D61821054800A8DECC /* ZYNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNormalViewController.h; sourceTree = "<group>"; };
 		4A4C32D71821054800A8DECC /* ZYNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNormalViewController.m; sourceTree = "<group>"; };
-		4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYNormalViewController.xib; sourceTree = "<group>"; };
 		4A4C32DC182105DD00A8DECC /* ZYDatabaseUitl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDatabaseUitl.h; sourceTree = "<group>"; };
 		4A4C32DD182105DD00A8DECC /* ZYDatabaseUitl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDatabaseUitl.m; sourceTree = "<group>"; };
 		582EE0F518214BC100E17C81 /* ZYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYSettingViewController.h; sourceTree = "<group>"; };
@@ -1098,9 +1098,9 @@
 		4A4C32D01821050000A8DECC /* Normal */ = {
 			isa = PBXGroup;
 			children = (
+				4A1F42C8182885F900135019 /* ZYNormalViewController.xib */,
 				4A4C32D61821054800A8DECC /* ZYNormalViewController.h */,
 				4A4C32D71821054800A8DECC /* ZYNormalViewController.m */,
-				4A4C32D81821054800A8DECC /* ZYNormalViewController.xib */,
 			);
 			path = Normal;
 			sourceTree = "<group>";
@@ -1507,12 +1507,12 @@
 				4A4C32C31820FBE800A8DECC /* ZYMainViewController.xib in Resources */,
 				4A4C32CE1821045300A8DECC /* ZYDishSuperViewController.xib in Resources */,
 				4A4C32D51821052F00A8DECC /* ZYReconmmentViewController.xib in Resources */,
-				4A4C32DA1821054800A8DECC /* ZYNormalViewController.xib in Resources */,
 				582EE0F918214BC100E17C81 /* ZYSettingViewController.xib in Resources */,
 				4A2B036718273683005C836D /* ZYMyOrderViewController.xib in Resources */,
 				4A2B036C1827391B005C836D /* ZYMyOrderCell.xib in Resources */,
 				4A173B4218277C02009D4D20 /* ZYSendOrderViewController.xib in Resources */,
 				4A173B4718277D2F009D4D20 /* ZYSelectTableViewController.xib in Resources */,
+				4A1F42C9182885F900135019 /* ZYNormalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
