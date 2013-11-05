@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ZYDishGroupModel.h"
 #import "ZYDetailView.h"
-#import "ZYDishModel.h"
+#import "ZYDishDao.h"
+#import "ZYOrderDao.h"
 
 @interface ZYDishSuperViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate,DetailViewDelegate>
 {
@@ -39,7 +40,7 @@
 @property (nonatomic, retain) NSMutableArray *searchResultArray;
 
 - (IBAction)showDetail:(id)sender;
-
+- (void)showAlertView;
 - (id)initWithDishGroup:(ZYDishGroupModel *)groupModel;
 
 @end
