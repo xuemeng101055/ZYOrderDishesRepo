@@ -50,6 +50,9 @@
     _sectionFlag[0] = YES;
     
     [self getDishesData];
+    _currentDishModel = [[_allDishesArray objectAtIndex:0] objectAtIndex:0];
+    NSString *dishImage = _currentDishModel.picName;
+    _dishImageView.image = [UIImage imageNamed:dishImage];
     
     _dishSuperTableView.delegate = self;
     _dishSuperTableView.dataSource = self;
@@ -139,7 +142,8 @@
     else{
         _currentDishModel = [_searchResultArray objectAtIndex:indexPath.row];
     }
-    
+    NSString *imageName = _currentDishModel.picName;
+    _dishImageView.image = [UIImage imageNamed:imageName];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -196,7 +200,6 @@
     
     [_dishSuperTableView reloadSections:[NSIndexSet indexSetWithIndex:2] withRowAnimation:UITableViewRowAnimationFade];
 }
-
 
 #pragma mark -
 #pragma mark UISearchDisplayControllerDelegate

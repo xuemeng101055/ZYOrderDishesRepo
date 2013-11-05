@@ -15,5 +15,6 @@
 
 @property (nonatomic, retain)NSArray *orderArray;
 
+- (IBAction)sendMyOrder:(id)sender;
 - (id)initWithOrderArray:(NSArray *)array;
 @end

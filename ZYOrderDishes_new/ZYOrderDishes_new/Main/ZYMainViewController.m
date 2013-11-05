@@ -69,7 +69,8 @@
                                       [UIImage imageNamed:@"hzs.png"],
                                       [UIImage imageNamed:@"hjsyl.png"],
                                       nil];
-    ZYReconmmentViewController *reconmmentViewController = [[ZYReconmmentViewController alloc] init];
+    ZYReconmmentViewController *reconmmentViewController = [[ZYReconmmentViewController alloc] initWithDishGroup:[_allGroupArray objectAtIndex:0]];
+    
     [self setCurrentViewController:reconmmentViewController];
     [reconmmentViewController release];
 

@@ -29,13 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-}
-
-- (void)setScrollImage:(NSIndexPath *)indexPath
-{
-    
+    _dishesImageScrollView.contentSize = CGSizeMake(self.view.frame.size.width, 0);
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
 }
 
 #pragma -
@@ -48,11 +43,11 @@
 
 - (IBAction)myOrderButton:(id)sender
 {
-    ZYAppDelegate *app = [UIApplication sharedApplication].delegate;
+
     NSArray *array = [ZYOrderDao getAllOrder];
     ZYMyOrderViewController *myOrderViewController = [[ZYMyOrderViewController alloc] initWithOrderArray:array];
     
-    [app.window.rootViewController presentViewController:myOrderViewController animated:YES completion:nil];
+    [self presentViewController:myOrderViewController animated:YES completion:nil];
     [myOrderViewController release];
 }
 - (IBAction)orderMyDishes:(id)sender

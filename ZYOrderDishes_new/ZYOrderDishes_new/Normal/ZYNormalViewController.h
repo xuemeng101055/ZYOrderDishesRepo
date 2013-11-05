@@ -11,6 +11,7 @@
 @interface ZYNormalViewController : ZYDishSuperViewController<UIScrollViewDelegate>
 {
     IBOutlet UIScrollView *_dishesImageScrollView;
+    
 }
 
 - (IBAction)myOrderButton:(id)sender;

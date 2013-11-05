@@ -7,6 +7,7 @@
 //
 
 #import "ZYMyOrderViewController.h"
+#import "ZYSendOrderViewController.h"
 #import "ZYOrderModel.h"
 #import "ZYMyOrderCell.h"
 
@@ -69,9 +70,19 @@
     cell.dishNameLabel.text = orderModel.dishName;
     cell.dishPrciceLabel.text = orderModel.dishPrice;
     
-    
-    
     return cell;
+}
+
+#pragma -
+#pragma mark SendMyOrder Method
+
+- (IBAction)sendMyOrder:(id)sender
+{
+  
+    ZYSendOrderViewController *sendOrder = [[ZYSendOrderViewController alloc] init];
+    [self presentViewController:sendOrder animated:YES completion:nil];
+    [sender release];
+    
 }
 
 - (void)didReceiveMemoryWarning

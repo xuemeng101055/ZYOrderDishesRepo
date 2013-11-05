@@ -14,7 +14,7 @@
 @interface ZYDishSuperViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate,DetailViewDelegate>
 {
     IBOutlet UITableView *_dishSuperTableView;
-    
+    IBOutlet UIImageView *_dishImageView;
     
     ZYDishGroupModel *_dishGroupModel;
     ZYDishModel *_currentDishModel;
